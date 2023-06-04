@@ -53,7 +53,7 @@ function spawnEnemies() {
     });
 
     if (progress >= 1000) progress-=100;
-    if (count % 15 == 0) setInterval(spawnEnemies, 3000);
+    if (count % 15 == 0 && count != 0) setInterval(spawnEnemies, 3000);
 
     
     target.append(enemy);
